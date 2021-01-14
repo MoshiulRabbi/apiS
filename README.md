@@ -2,5 +2,5 @@
 
 https://djpyapi.herokuapp.com/
 
-used weather api and a public api to fetch the data and added to django web app without designing
+used a weather api and other public api. fetch the data and added to django web app without designing
 
