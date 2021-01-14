@@ -11,9 +11,6 @@
          
          <h2>Enter city name to see weather the forecast</h2>
          <div class="center">
-         
-         
-         
          <form action="{% url 'home' %}" method="post">
             {% csrf_token %}
             <input type="text" name="location" placeholder="Enter City ">

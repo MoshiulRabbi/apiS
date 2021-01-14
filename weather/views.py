@@ -19,7 +19,7 @@ def home(request):
         req = requests.get(getweather)
         res = req.json()
 
-        if res.get('cod')=='404':
+        if res.get('cod')=='404' or city == "":
             return render(request,"weather/home.html",{"err":"Invalid City"})
         else:
             data = res['main']
