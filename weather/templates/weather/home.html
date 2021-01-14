@@ -8,13 +8,14 @@
 </head>
    <body>
       <center>
+         <br><br><br><br>
          
          <h2>Enter city name to see weather the forecast</h2>
          <div class="center">
          <form action="{% url 'home' %}" method="post">
             {% csrf_token %}
             <input type="text" name="location" placeholder="Enter City ">
-            <input type="submit" name="search" value="search">		
+            <input type="submit" name="search" value="search">      
          </form>
          
          {% if err %}
@@ -22,6 +23,10 @@
          {% endif %}
          {% if weather %}
             <h2> Temp in {{city}} is: {{weather.temp}} °C </h2>
+            <h3>{{ov}}</h3>
+            <figure class="image is-30x30">
+               <img src="https://openweathermap.org/img/w/{{ icon }}.png" alt="Image">
+           </figure>
             <h3>Humidity : {{weather.humidity}} % </h3>
             <h3>Feels Like : {{weather.feels_like}} °C  </h3>
          {% endif %}
