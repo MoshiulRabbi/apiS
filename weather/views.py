@@ -23,9 +23,10 @@ def home(request):
             return render(request,"weather/home.html",{"err":"Invalid City"})
         else:
             data = res['main']
-        #humidity = res.get("wind", dict()).get("speed")
-        #icon = res.get("weather", dict()).get("icon")
-        return render(request,"weather/home.html",{"weather":data,"city":city})
+            icon = res['weather'][0]['icon']
+            ov = res['weather'][0]['description']
+
+        return render(request,"weather/home.html",{"weather":data,"city":city,"icon":icon,"ov":ov})
     else:
         return render(request,"weather/home.html")
 
