@@ -10,7 +10,7 @@ import json
 def home(request):
 
     if request.method == "POST":
-        city = request.POST["location"]
+        city = request.POST["location"].capitalize() 
 
         
         api = "W_API_KEY"
@@ -24,7 +24,7 @@ def home(request):
         else:
             data = res['main']
             icon = res['weather'][0]['icon']
-            ov = res['weather'][0]['description']
+            ov = res['weather'][0]['description'].capitalize() 
 
         return render(request,"weather/home.html",{"weather":data,"city":city,"icon":icon,"ov":ov})
     else:

@@ -1,19 +1,19 @@
-<!DOCTYPE html> {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% static 'weather/styles.css' %}" rel="stylesheet" >
-    <title>Random activity</title>
-</head>
-<body>
-    <center>
-        <div class="center">
+
+{% extends 'weather/layout.html' %}
+
+
+{% block content %}
+
+
+        <div class="text-center">
+
+        
     <h1>{{activity}}</h1>
-    <a href="{%url 'bore'%}">Refresh</a>
+    
+    <a href="{%url 'bore'%}"><u> Refresh</u></a>
     <br><br>
-    <a href="{%url 'home'%}">Back to home</a>
+    <a href="{%url 'home'%}"> <u>Back to home</u></a>
 </div>
-</center>
-</body>
-</html>
+
+
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>{% load static %}
+<html>
+<head>
+	<title>Weather Forecast</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="mhrabbi">
+    <link href="{% static 'weather/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'weather/css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+
+    
+</head>
+<body>
+<div id="particles-js"></div>
+    
+          <div id="main" class="display-text col-sm-4 offset-sm-4">
+            <!-- displaying content of the child template -->
+            {% block content %}
+            {% endblock %}
+          </div>
+
+    <script src="{% static 'weather/js/index.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'weather/js/tether.min.js'%}"></script>
+    <script src="{% static 'weather/js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
