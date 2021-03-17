@@ -16,11 +16,11 @@ from .models import Task
 @api_view(['GET'])
 def overview(request):
     api_urls = {
-        'List':'/task-list/',
-        'Detail View': '/tast-detail/<str:pk>/',
-        'Create': '/tast-create/',
-        'Update':'/task-update/<str:pk>/',
-        'Delete': '/task-delete/<str:pk>/'
+        'List':'task-list/',
+        'Detail View': 'task-detail/<str:pk>/',
+        'Create': 'task-create/',
+        'Update':'task-update/<str:pk>/',
+        'Delete': 'task-delete/<str:pk>/'
     }
 
     return Response(api_urls)
