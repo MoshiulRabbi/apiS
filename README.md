@@ -20,3 +20,6 @@ https://djpyapi.herokuapp.com/todo
 
 
 
+Ml model test
+
+https://djpyapi.herokuapp.com/ml/
