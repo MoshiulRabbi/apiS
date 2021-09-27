@@ -9,7 +9,7 @@ joblib==1.0.1
 numpy==1.20.3
 pytz==2021.1
 requests==2.25.1
-scikit-learn==0.24.2
+scikit-learn==1.0
 scipy==1.6.3
 sklearn==0.0
 sqlparse==0.4.1
