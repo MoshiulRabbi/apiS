@@ -15,4 +15,4 @@ sklearn==0.0
 sqlparse==0.4.1
 threadpoolctl==2.1.0
 urllib3==1.26.9
-whitenoise==5.2.0
+whitenoise==6.0.0
