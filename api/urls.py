@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('weather.urls')),
     path('todo/', include('todo_rest.urls')),
-    path('ml/',include('ml_rest.urls'))
+    path('ml/',include('ml_rest.urls')),
+    path('quotes/', include('quotes.urls'))
 ]
