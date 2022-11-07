@@ -7,6 +7,6 @@ sqlparse==0.4.1
 whitenoise==5.2.0
 requests==2.25.1
 numpy
-sklearn==0.0
+sklearn==0.0.post1
 django-cors-headers==3.10.1
 djangorestframework==3.13.1
